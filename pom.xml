@@ -31,8 +31,12 @@
             <artifactId>desktop-game-engine</artifactId>
             <version>1.0</version>
         </dependency>
-        <!--org.junit.jupiter: junit-jupiter-engine: 5.8.2 (с scope test)-->
 
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.8.2</version>
+        </dependency>
     </dependencies>
 
     <build>
