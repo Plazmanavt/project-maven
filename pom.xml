@@ -94,9 +94,11 @@
                         <manifest>
                             <mainClass>org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader</mainClass>
                             <addClasspath>true</addClasspath>
-                            <rsrcMainclass>com.javarush.games.racer.RacerGame</rsrcMainclass>
                         </manifest>
-
+                        <manifestEntries>
+                            <Rsrc-Main-Class>com.javarush.games.racer.RacerGame</Rsrc-Main-Class>
+                            <Class-Path>./</Class-Path>
+                        </manifestEntries>
                     </archive>
                 </configuration>
             </plugin>
