@@ -41,6 +41,15 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>${project.build.directory}lib/</directory>
+<!--                <includes>-->
+<!--                    <include>**/*.properties</include>-->
+<!--                </includes>-->
+            </resource>
+        </resources>
+
         <plugins>
             <!-- Usual compilation -->
             <plugin>
@@ -122,9 +131,8 @@
                     <outputDirectory>
                         ${project.build.directory}/lib/
                     </outputDirectory>
-                    <overWriteReleases>false</overWriteReleases>
-                    <overWriteSnapshots>false</overWriteSnapshots>
-                    <overWriteIfNewer>true</overWriteIfNewer>
+                    <includeScope>compile</includeScope>
+
                 </configuration>
                 <executions>
                     <execution>
