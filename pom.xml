@@ -74,7 +74,15 @@
                     <file>${basedir}/lib/desktop-game-engine.jar</file>
                     <generatePom>true</generatePom>
                 </configuration>
-
+                <executions>
+                    <execution>
+                        <id>install-jar-lib</id>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <phase>validate</phase>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
