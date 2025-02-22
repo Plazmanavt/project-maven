@@ -84,6 +84,22 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.1</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader</mainClass>
+                            <addClasspath>true</addClasspath>
+                            <rsrcMainclass>com.javarush.games.racer.RacerGame</rsrcMainclass>
+                        </manifest>
+
+                    </archive>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
