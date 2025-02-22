@@ -43,7 +43,7 @@
     <build>
         <resources>
             <resource>
-                <directory>${project.build.directory}lib/</directory>
+                <directory>${project.build.directory}/lib</directory>
 <!--                <includes>-->
 <!--                    <include>**/*.properties</include>-->
 <!--                </includes>-->
